@@ -72,7 +72,11 @@ class Wc_Acf_Img_Fields_Admin {
 				$thumbnails_arr = (explode(",",$thumbnail_ids));
 				for($i=0; $i<3; $i++){
 					if(isset($thumbnails_arr[$i]) && isset($acf_arr[$i])){
-						update_post_meta($product_id,$acf_arr[$i],$thumbnails_arr[$i] );
+						$existing_post_meta_val = get_post_meta($product_id, $acf_arr[$i], true);
+						$existing_post_meta_val = isset($existing_post_meta_val) ? $existing_post_meta_val : '';
+						if(empty($existing_post_meta_val)){
+							update_post_meta($product_id,$acf_arr[$i],$thumbnails_arr[$i] );			
+						}
 					}
 				}
 			}

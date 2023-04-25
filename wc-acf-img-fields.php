@@ -16,7 +16,7 @@
  * Plugin Name:       WC ACF Image Fields
  * Plugin URI:        https://copyecom.ai
  * Description:       This plugin is a tool to sync woocommerce product gallery images to ACF Fields.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Iqbal
  * Author URI:        https://fiverr.com/iqbalmalik
  * License:           GPL-2.0+
@@ -35,7 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'WC_ACF_IMG_FIELDS_VERSION', '1.0.0' );
+define( 'WC_ACF_IMG_FIELDS_VERSION', '1.0.1' );
 
 /**
  * The code that runs during plugin activation.
